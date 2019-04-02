@@ -35,6 +35,10 @@ header li > a:hover{
   color: royalblue;
 }
 
+.current{
+  border-bottom: 4px solid royalblue;
+}
+
 section{
   text-align: center;
 }
@@ -49,10 +53,63 @@ section p{
   font-size: 14px;
 }
 
-/* section > img  */
-
 .icon{
-  /* border-radius: 30px;
-  border-radius: 70px; */
   border-radius: 50%;
+  /* border-color: pink;
+  border-width: 5px;
+  border-style: solid; */
+  border: 5px solid white;
+  /* box-shadow: x y blur color */
+  /* box-shadow: 10px 10px 5px black; */
+  box-shadow: 0 0 5px gray;
+}
+
+.works{
+  width: 400px;
+  margin: 60px auto;
+  border-bottom: 1px solid gray;
+}
+
+.works > section {
+  margin-bottom: 40px;
+}
+
+.works h1,
+.works p {
+  text-align: left;
+}
+
+footer{
+  width: 400px;
+  margin: 0 auto 60px;
+}
+
+footer ul{
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  float: left;
+}
+
+footer li{
+  display: inline-block;
+}
+
+footer li > a:hover{
+  opacity: 0.6;
+}
+
+footer p{
+  color: lightgray;
+  font-size: 14px;
+  text-align: right;
+}
+
+.about{
+  width: 400px;
+  margin: 0 auto 60px;
+}
+
+.about p{
+  text-align: left;
 }
