@@ -2,6 +2,7 @@
 <html lang="ja">
  <head>
   <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <title>太郎のポートフォリオサイト</title>
   <link rel="icon" href="favicon.ico">
   <meta name="description" content="太郎のポートフォリオサイトです。">
@@ -33,7 +34,7 @@
 
   <section>
     <img src="img/taro.png" width="140" hight="140" alt="太郎のアイコン" class="icon">
-    <h1>山田太郎</h1>
+    <h1>山田次郎</h1>
     <p>UI/UXデザイナー見習いです</p>
 
 <div class="works">
@@ -77,5 +78,26 @@
     </ul>
   <p>(c) Taro Yamada</p>
 </footer>
+<div id="back-to-top" style="position:fixed;right:5px;bottom:5px"><a href="#"><img src="back-to.png"></a></div>
+     <div id="pos" style="position:fixed;left:5px;bottom:5px"></div>
+<script>
+    $(function() {
+      $('#back-to-top').hide();
+      $(window).scroll(function() {
+         $('#pos').text($(this).scrollTop());
+         if ($(this).scrollTop() > 60) {
+             $('#back-to-top').fadeIn();
+         } else {
+             $('#back-to-top').fadeOut();
+         }
+      });
+          $('#back-to-top a').click(function() {
+            $('html,body').animate({
+              scrollTop:0
+            },500);
+            return false;
+          });
+    });
+    </script>
  </body>
 </html>
